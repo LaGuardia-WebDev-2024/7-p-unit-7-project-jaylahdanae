@@ -10,10 +10,11 @@ void setup() {
 draw = function(){
  
   background(255,255,255,0);
-  
+  ellipse(105,285,147,15);
 
 
-
+textSize(30); //size
+text("🤿", 175, 235); //x and y 
 
 
   //Show x y values when mousepressed
