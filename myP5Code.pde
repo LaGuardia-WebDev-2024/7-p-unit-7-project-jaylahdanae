@@ -8,9 +8,17 @@ void setup() {
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
- 
+ //body
   background(255,255,255,0);
-  ellipse(105,285,147,15);
+  //body
+  fill(139,69,19);
+  ellipse(105,285,50,15);
+  //head
+ellipse(145,267,50,50);
+//eyes
+fill(0);
+ellipse(135,260,15,15);
+ellipse(158,260,15,15);
 
 
 textSize(30); //size
