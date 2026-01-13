@@ -11,19 +11,29 @@ draw = function(){
  //body
   background(255,255,255,0);
   //body
-  fill(139,69,19);
-  ellipse(105,285,50,15);
+  fill(181,135,89);
+  ellipse(110,285,50,15);
   //head
-ellipse(145,267,50,50);
+ellipse(145,267,40,40);
 //eyes
 fill(0);
-ellipse(135,260,15,15);
-ellipse(158,260,15,15);
-
+ellipse(139,260,10,10);
+ellipse(155,260,10,10);
+//inner eye
+fill(255,255,255);
+ellipse(139,260,5,5);
+ellipse(155,260,5,5);
+//bathing suit
+fill(98,195,222);
+triangle(115,276,128,282,112,290);
+triangle(97,279,103,290,93,283);
+//arms
+fill(181,135,89);
+ellipse(123,289,22,12);
 
 textSize(30); //size
 text("🤿", 175, 235); //x and y 
-
+(158,98,30)
 
   //Show x y values when mousepressed
   if(mousePressed){showXYPositions();}
