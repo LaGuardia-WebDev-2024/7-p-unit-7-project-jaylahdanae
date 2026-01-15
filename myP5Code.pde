@@ -5,6 +5,7 @@ void setup() {
 
 //🎯Variable Declarations Go Here
 Var swimX=0;
+moonSize=0;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -47,14 +48,16 @@ line(151+swimX,247,152,254);
 line(156+swimX,251,156,254);
 //moon
 fill(25,68,138);
-ellipse(100,100,100,100);
-fill(0);
-line(56,73,125,141);
-
+ellipse(100,100,100+moonSize,100+moonSize);
+fill(189,183,183);
+arc(100,96,85,85,radians(75),radians(270));
+fill(255,255,266);
+ellipse(100,20,10+moonSize, 10+moonSize);
 textSize(30); //size
 text("🤿", 175, 235); //x and y 
-swimX+=0;
-
+swimX+=2;
+moonSize+=1;
+if(moonSize>50){moonSize=0}
   //Show x y values when mousepressed
   if(mousePressed){showXYPositions();}
 
