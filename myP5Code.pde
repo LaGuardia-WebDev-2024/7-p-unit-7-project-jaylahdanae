@@ -52,7 +52,7 @@ ellipse(100,100,100+moonSize,100+moonSize);
 fill(189,183,183);
 arc(100,96,85,85,radians(75),radians(270));
 fill(255,255,266);
-ellipse(100,20,10+moonSize, 10+moonSize);
+
 textSize(30); //size
 text("🤿", 175, 235); //x and y 
 swimX+=2;
